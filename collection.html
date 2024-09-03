@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="nostra.css">
+    <link rel="icon" href="nostra logo.jpg">
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <h1 class="title">Nostra</h1>
+
+        <div class="navbarlists">
+            <p class="navlist"><a href="index.html">Home</a></p>
+            <p class="navlist"><a href="collection.html">Collections</a></p>
+            <p class="navlist"><a href="contacts.html">Contact</a></p>
+
+        </div>
+
+        <div class="toggle" onclick="side()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- side navbar -->
+    <div class="sidenav">
+        <p class="cross" style="text-align: right;color: antiquewhite;" onclick="crossed()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbarlists">
+            <p class="side-navlist"><a href="index.html">Home</a></p>
+            <p class="side-navlist"><a href="collection.html">Collections</a></p>
+            <p class="side-navlist"><a href="contacts.html">Contact</a></p>
+        </div>
+    </div>
+
+    <!-- collections -->
+    <div class="collections">
+        <div>
+            <input type="text" placeholder="Search" id="search" onkeyup="check(event)"><i class="fa-solid fa-magnifying-glass" onclick="check(event)"></i>
+        </div>
+        <div id="product">
+            <div id="product-box">
+                <img src="3.jpg" alt="">
+                <p>White shirt</p>
+            </div>
+            <div id="product-box">
+                <img src="2.jpg" alt="">
+                <p>Black shirt</p>
+            </div>
+            <div id="product-box">
+                <img src="9.jpg" alt="">
+                <p>Maroon shirt</p>
+            </div>
+            <div id="product-box">
+                <img src="8.jpg" alt="">
+                <p>Green shirt</p>
+            </div>
+            <div id="product-box">
+                <img src="7.jpg" alt="">
+                <p>Yellow shirt</p>
+            </div>
+            <div id="product-box">
+                <img src="6.jpg" alt="">
+                <p>Pink shirt</p>
+            </div>
+            <div id="product-box">
+                <img src="5.jpg" alt="">
+                <p>Red shirt</p>
+            </div>
+            <div id="product-box">
+                <img src="4.jpg" alt="">
+                <p>stripped shirt</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- contacts -->
+    <div class="contact">
+        <h2>Nostra</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        <p><i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-regular fa-envelope"></i>
+        </p>
+        <p>@2024 Nostra.com</p>
+    </div>
+
+    <script src="nostra.js"></script>
+</body>
+
+</html>
